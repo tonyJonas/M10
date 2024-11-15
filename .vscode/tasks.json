@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar C com OpenMP",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-fopenmp",
+                "-o",
+                "soma_vetor",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila o código C com suporte a OpenMP",
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/c"]
+                }
+            }
+        }
+    ]
+}
