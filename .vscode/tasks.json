@@ -8,7 +8,7 @@
             "args": [
                 "-fopenmp",
                 "-o",
-                "soma_vetor",
+                "${fileDirname}/${fileBasenameNoExtension}",
                 "${file}"
             ],
             "group": {
